@@ -52,8 +52,6 @@ public class WebController {
         String urlS = "http://www.weeia.p.lodz.pl/pliki_strony_kontroler/kalendarz.php?";
         urlS += "rok=" + yyear + "&miesiac=" + ymonth + "&lang=1";
 
-        System.out.println("http://www.weeia.p.lodz.pl/pliki_strony_kontroler/kalendarz.php?rok=2019&miesiac=12&lang=1");
-        System.out.println(urlS);
         URL website = new URL(urlS);
         URLConnection connection = website.openConnection();
         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
